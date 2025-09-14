@@ -58,4 +58,4 @@ const { name, email, password } = req.body;
   });
 };
 
-module.exports ={registerController,loginController}
+module.exports ={registerController,loginController};
