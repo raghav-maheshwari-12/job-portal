@@ -8,6 +8,7 @@ const dotenv =require("dotenv");
 //file import
 const  connectDb = require("./config/db");
 const { errroMiddelware } = require("./middlewares/errorMiddleware");
+ 
 
 //middlewares
 app.use(express.json());
@@ -23,6 +24,8 @@ connectDb();
 //routes
 app.use("/api/v1/test",require("./routes/testRoute"));
 app.use("/api/v1/auth",require("./routes/authRoute"));
+
+app.use("/api/v1/user", require("./routes/userRoute"));
 
 
 //validation middelware
