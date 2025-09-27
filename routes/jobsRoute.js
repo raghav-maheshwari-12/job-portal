@@ -10,7 +10,7 @@ router.post("/create-job", userAuth, createJobController);
 // //GET JOBS || GET
 router.get("/get-job", userAuth, getAllJObControllers);
 
-//UPDATE JOBS ||  PATCH
+//UPDATE JOBS ||  PATCH || OUT
 router.patch("/update-job/:id", userAuth, updateJobController);
 
 //DELETE JOBS || DELETE
